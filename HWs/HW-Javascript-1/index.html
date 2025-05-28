@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-JAVASCRIPT-1</title>
+</head>
+<style>
+    table, th, td
+    {
+        border-collapse: collapse;
+        border: 2px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>HW-Javascript-1</h1>
+    <p id="resultsTable"></p>
+    <script>
+       const table = document.getElementById("resultsTable");
+       var html = "<table><tr><th>Task</th><th>Result</th></tr>";
+       var name = prompt("Enter your name: ");
+       html += `<tr><td>Task 1: Greeting</td><td>${name}</td></tr>`;
+
+       const currentYear = 2025;
+       var year = prompt("Enter your year of birth: ");
+       var age = 2025 - year;
+       //console.log(typeof age);
+       //console.log(age);
+       if(Number.isInteger(age)) html += `<tr><td>Task 2: Age</td><td>${age} is your age</td></tr>`;
+       else html += `<tr><td>Task 2: Age</td><td>Age must be an integer</td></tr>`;
+
+       var side = prompt("Enter the side of the square: ");
+       if(!isNaN(side) && side > 0) html += `<tr><td>Task 3: Perimeter of the square</td><td>${side * 4}</td></tr>`
+       else html += `<tr><td>Task 3: Perimeter of the square</td><td>Side must be a positive number</td></tr>`;
+
+       var radius = prompt("Enter the radius");
+       var area = Math.PI * radius;
+       if(!Number.isNaN(area) && area > 0) html += `<tr><td>Task 4: Area of a circle</td><td>${area}</td></tr>`;
+       else  html += `<tr><td>Task 4: Area of a circle</td><td>Invalid radius input</td></tr>`;
+
+       var distance = prompt("Enter the distance (in meters): ");
+       var time = prompt("Enter the time (in seconds): ");
+       var speed = distance / time;
+       if(!Number.isNaN(speed) && speed > 0) html += `<tr><td>Task 5: Speed</td><td>${speed} m/s</td></tr>`;
+       else html += `<tr><td>Task 5: Speed</td><td>Invalid distance or time</td></tr>`;
+
+       const usdToEur = 0.88;
+       var price = prompt("Enter the price in UDS");
+       price *= usdToEur;
+       if(!Number.isNaN(price) && price > 0) html += `<tr><td>Task 6: USD -> EUR</td><td>${price} EUR</td></tr>`;
+       else html += `<tr><td>Task 6: USD -> EUR</td><td>Invalid price</td></tr>`;
+
+       const fileSize = 820;
+       var flash = prompt("Enter the USB-flash-drive storage (in GD): ");
+       var files = Math.floor(flash * 1000 / fileSize);
+       if(!Number.isNaN(files) && files >= 0) html += `<tr><td>Task 7: USB-drive</td><td>${files} files</td></tr>`;
+       else html += `<tr><td>Task 7: USB-drive</td><td>Invalid input</td></tr>`;
+
+       var total = prompt("Enter how much money you own: ");
+       var chocolateBar = prompt("Enter the price of one chocolate bar: ");
+       var count = Math.floor(total / chocolateBar);
+       var remaining = total - count * chocolateBar;
+       if(!isNaN(remaining) && !isNaN(count)) html += `<tr><td>Task 8: Chocolate bar(s)</td><td>${count} bars and you'll have ${remaining} remaining</td></tr>`;
+       else html += `<tr><td>Task 8: Chocolate bars</td><td>Invalid input</td></tr>`;
+
+       var number = prompt("Enter an integer: ");
+       var palindrome = "";
+       var iterations = number.length;
+       for(let i = 0; i < iterations; i++)
+       {
+            palindrome += Math.floor(number % 10);
+            number /= 10;
+       }
+       
+       if(!isNaN(palindrome)) html += `<tr><td>Task 9: Palindrome</td><td>${palindrome}</td></tr>`;
+       else html += `<tr><td>Task 9: Palindrome</td><td>Invalid input</td></tr>`;
+
+       var number0 = prompt("Enter an integer: ");
+       if(!isNaN(number0)) html += `<tr><td>Task 10: Even/Odd</td><td>${number0} is ${number0 % 2 == 0 ? "Even" : "Odd"}</td></tr>`;
+       else html += `<tr><td>Task 10: Even/Odd</td><td>Invalid input</td></tr>`;
+
+
+       html += "</table>";
+       //console.log(html);
+       table.innerHTML = html;
+
+    </script>
+</body>
+</html>
