@@ -58,7 +58,7 @@ class StyledEmployeesTable extends EmployeesTable
         }
 
         text += "</table>";
-        console.log(text);
+        //console.log(text);
         return text;
     }
 }
