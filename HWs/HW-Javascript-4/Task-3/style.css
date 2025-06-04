@@ -1,0 +1,26 @@
+body
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+.field
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: limegreen;
+    display: flex;
+}
+
+.ball
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightgray;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 50px;
+    transition: all 1s ease;
+}

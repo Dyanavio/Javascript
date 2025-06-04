@@ -1,0 +1,86 @@
+.task1Container
+{
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+}
+input 
+{
+  margin: 5px;
+  width: 200px;
+}
+
+.modal
+{
+    display: none;
+    color: white;
+    font-size: 20px;
+    border: 0px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: gray;
+    justify-items: center;
+}
+
+.styleButton
+{
+    width: 100px;
+    height: 30px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #303030;
+    transition: background-color 0.5s ease;
+}
+.styleButton:hover
+{
+    background-color: #212121;
+}
+
+.traffic
+{
+    margin-top: 20px;
+    width: 600px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.light
+{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    background-color: lightgray;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.buttonNext
+{
+    width: 100px;
+    height: 100px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #303030;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 25px;
+    transition: background-color 0.5s ease;
+}
+.buttonNext:hover
+{
+    background-color: #212121;
+}
