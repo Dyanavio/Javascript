@@ -1,0 +1,100 @@
+canvas
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 50vw;
+    height: 50vh;
+}
+
+.figure-selection
+{
+    width: 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.options
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img
+{
+    width: 100px;
+    height: auto;
+}
+
+button
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    border: 1px solid black;
+}
+
+.colors
+{
+    display: flex;
+    align-items: center;
+}
+
+.white-button
+{
+    background-color: white;
+}
+.gray-button
+{
+    background-color: gray;
+}
+.lightgray-button
+{
+    background-color: lightgray;
+}
+.black-button
+{
+    background-color: black;
+}
+.pink-button
+{
+    background-color: pink;
+}
+.red-button
+{
+    background-color: red;
+}
+.yellow-button
+{
+    background-color: yellow;
+}
+.orange-button
+{
+    background-color: orange;
+}
+.lightblue-button
+{
+    background-color: lightblue;
+}
+.blue-button
+{
+    background-color: blue;
+}
+.lightgreen-button
+{
+    background-color: lightgreen;
+}
+.green-button
+{
+    background-color: green;
+}
+.violet-button
+{
+    background-color: violet;
+}
+.purple-button
+{
+    background-color: purple;
+}
+
