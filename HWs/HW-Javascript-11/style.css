@@ -1,0 +1,58 @@
+#dnd-field
+{   
+    width: 96%;
+    margin: 2%;
+    height: 40vw;
+    border: 2px solid lightgray;
+    position: relative;
+}
+
+.dnd-item
+{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.azure
+{
+    background-color: azure;
+}
+.lightblue
+{
+    background-color: lightblue;
+}
+.purple
+{
+    background-color: purple;
+}
+.steelblue
+{
+    background-color: steelblue;
+}
+
+#left-block, #right-block
+{
+    border: 2px solid lightgray;
+    bottom: 0;
+    position: absolute;
+    width: 45%;
+    height: 25%;
+}
+
+#left-block
+{
+    left: 0;
+}
+
+#right-block
+{
+    right: 0;
+}
